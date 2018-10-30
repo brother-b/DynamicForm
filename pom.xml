@@ -8,7 +8,6 @@
   <artifactId>df-parent</artifactId>
   <version>1.0</version>
   <modules>
-
     <module>df-web-home</module>
     <module>df-core-model</module>
   </modules>
