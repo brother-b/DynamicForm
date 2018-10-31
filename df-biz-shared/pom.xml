@@ -9,11 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>df-web-home</artifactId>
+    <artifactId>df-biz-shared</artifactId>
     <version>1.0</version>
-    <packaging>war</packaging>
 
-    <name>df-web-home Maven Webapp</name>
+    <name>df-biz-shared</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -25,14 +24,14 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>com.brotherb.df</groupId>
-            <artifactId>df-biz-shared</artifactId>
+            <artifactId>df-core-model</artifactId>
         </dependency>
 
     </dependencies>
-
 
 </project>
