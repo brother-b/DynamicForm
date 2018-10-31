@@ -8,9 +8,9 @@
   <artifactId>df-parent</artifactId>
   <version>1.0</version>
   <modules>
-    <module>df-web-home</module>
     <module>df-core-model</module>
     <module>df-biz-shared</module>
+    <module>df-web-home</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -24,86 +24,87 @@
     <spring.version>3.1.2.RELEASE</spring.version>
   </properties>
 
-  <dependencies>
+  <dependencyManagement>
+    <dependencies>
 
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
 
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-jdbc</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
 
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
 
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-aop</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aop</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
 
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-core</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
 
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <version>${spring.version}</version>
-    </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-test</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
 
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.0.1</version>
-      <scope>provided</scope>
-    </dependency>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
+        <scope>provided</scope>
+      </dependency>
 
-    <dependency>
-      <groupId>commons-lang</groupId>
-      <artifactId>commons-lang</artifactId>
-      <version>2.6</version>
-      <scope>provided</scope>
-    </dependency>
+      <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>2.6</version>
+      </dependency>
 
-    <dependency>
-      <groupId>com.brotherb.df</groupId>
-      <artifactId>df-web-home</artifactId>
-      <version>1.0</version>
-    </dependency>
+      <dependency>
+        <groupId>com.brotherb.df</groupId>
+        <artifactId>df-web-home</artifactId>
+        <version>1.0</version>
+      </dependency>
 
-    <dependency>
-      <groupId>com.brotherb.df</groupId>
-      <artifactId>df-biz-shared</artifactId>
-      <version>1.0</version>
-    </dependency>
+      <dependency>
+        <groupId>com.brotherb.df</groupId>
+        <artifactId>df-biz-shared</artifactId>
+        <version>1.0</version>
+      </dependency>
 
-    <dependency>
-      <groupId>com.brotherb.df</groupId>
-      <artifactId>df-core-model</artifactId>
-      <version>1.0</version>
-    </dependency>
+      <dependency>
+        <groupId>com.brotherb.df</groupId>
+        <artifactId>df-core-model</artifactId>
+        <version>1.0</version>
+      </dependency>
 
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <build>
-    <finalName>df-web-home</finalName>
+    <finalName>DynamicForm</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
