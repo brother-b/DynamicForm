@@ -65,8 +65,8 @@ public abstract class Control implements Serializable {
      * @return
      */
     @Override
-    public String toString(){
-        return ReflectionToStringBuilder.toString(this,ToStringStyle.SHORT_PREFIX_STYLE);
+    public String toString() {
+        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
     }
 
 }
