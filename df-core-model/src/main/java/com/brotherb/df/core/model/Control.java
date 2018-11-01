@@ -20,45 +20,8 @@ public abstract class Control implements Serializable {
 
     private static final long serialVersionUID = -5545392479727873970L;
 
-    private String name;
 
-    private ControlTypeEnum controlType;
 
-    /**
-     * Getter method for property <tt>name</tt>.
-     *
-     * @return property value of name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * Setter method for property <tt>name</tt>.
-     *
-     * @param name  value to be assigned to property name
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    /**
-     * Getter method for property <tt>controlType</tt>.
-     *
-     * @return property value of controlType
-     */
-    public ControlTypeEnum getControlType() {
-        return controlType;
-    }
-
-    /**
-     * Setter method for property <tt>controlType</tt>.
-     *
-     * @param controlType  value to be assigned to property controlType
-     */
-    public void setControlType(ControlTypeEnum controlType) {
-        this.controlType = controlType;
-    }
 
     /**
      * toString
