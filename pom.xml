@@ -64,6 +64,12 @@
       </dependency>
 
       <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>4.2</version>
+      </dependency>
+
+      <dependency>
         <groupId>com.brotherb.df</groupId>
         <artifactId>df-test</artifactId>
         <version>1.0</version>
